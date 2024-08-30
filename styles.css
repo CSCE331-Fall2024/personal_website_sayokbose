@@ -1,0 +1,178 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5dc; 
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+}
+/* Modernized Nav Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(90deg, #010101, #676767); /* Gradient background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navbar a:hover {
+    color: #a865ff;
+}
+
+#home{
+    margin-top: 2%;
+}
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #a865ff;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar #profile-link {
+    position: absolute;
+    left: 20px; /* Keep the profile link on the left side */
+    display: flex;
+    align-items: center;
+}
+
+.navbar #profile-link img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+
+.profile-section {
+    margin-top: 80px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-pic {
+    width: 35%;
+    height: 35%;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    margin-right: -10%; 
+    z-index: 1;
+    position: relative;
+    
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.intro-text h1 {
+    font-size: 15vb;
+    margin: 0;
+}
+
+#name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#name-container #Sayok {
+    
+    line-height: 1;
+    margin: 0;
+}
+
+#name-container #Bose {
+    display: inline-block;
+    
+    line-height: 1;
+    margin: 0;
+}
+
+#mail-button {
+    display: inline-block;
+    font-size: 5vb;
+    align-self: center;
+    cursor: pointer;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-button {
+    background-color: #555;
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+#footer-text {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px; /* Optional: Adjust the space between the text and the bottom */
+    font-size: 18px; /* Optional: Adjust the font size as needed */
+}
+
