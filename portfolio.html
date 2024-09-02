@@ -18,9 +18,9 @@
                 <a href="portfolio.html">Portfolio</a>
                 <a href="qualification.html">Qualification</a>
                 <a href="service.html">Service</a>
-                <a href="#ai">AI</a>
+                <a href="ai.html">AI</a>
             </div>
-            
+
         </div>
 
         
@@ -28,13 +28,72 @@
     </header>
 
     <main class="page-container">
-        <h1>My Portfolio</h1>
-        <p>Here are some of the projects I have worked on:</p>
-        <ul>
-            <li><a href="#project1">Project 1: AI Chatbot</a></li>
-            <li><a href="#project2">Project 2: E-commerce Website</a></li>
-            <li><a href="#project3">Project 3: Mobile App</a></li>
-        </ul>
+            <h1>My Portfolio</h1>
+            <div class="portfolio-grid">
+                <div class="column">
+                    <div class="project">
+                        <!-- need to add onlick function later -->
+                        <img src="./assets/project_pics/4195ba1a668f8f5320843d5c7c2374af42ab7542.png" alt="Project 1">
+                        <div class="project-info">
+                            <h2>Howdy Finds</h2>
+                            <p>Developed a mobile application using React Native and Firebase, providing a platform for students to buy and sell textbooks, game
+                                tickets, and other miscellaneous items. The app features a secure login system, enabling users to create accounts and manage their listings.
+                                Users can view posts, chat, and request direct messages to negotiate and finalize transactions. The integration of Firebase ensured
+                                real-time data synchronization and secure data storage, enhancing the overall user experience and reliability of the platform.</p>
+                        </div>
+                    </div>
+    
+                    <div class="project">
+                        <img src="./assets/project_pics/8101319.png" alt="Project 2">
+                        <div class="project-info">
+                            <h2>Resume Builder</h2>
+                            <p>Developed an innovative Flask-based application that leverages machine learning to analyze resumes and automate the job application
+                                process. The program employs web scraping techniques to extract key information from job postings, then utilizes OpenAI’s language
+                                models to generate tailored, formatted resumes for each application.</p>
+                        </div>
+                    </div>
+    
+                    <div class="project">
+                        <img src="./assets/project_pics/wordle.JPEG" alt="Project 3">
+                        <div class="project-info">
+                            <h2>Wordle</h2>
+                            <p>Engineered a fully functional replica of the popular game ‘Wordle’ in Java, leveraging object-oriented programming principles and JavaFX for an interactive GUI. Implemented robust input validation to ensure a seamless user experience, and optimized the game's logic for performance and scalability.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column">
+
+                    <div class="project">
+                        <img src="./assets/project_pics/nba-logo.jpg" alt="Project 6">
+                        <div class="project-info">
+                            <h2>NBA Prediction Model</h2>
+                            <p>Utilized web scraping techniques to gather comprehensive NBA game data, extracting player and team statistics for analysis. Leveraging
+                                Python and data manipulation libraries, I engineered features such as player performance metrics and opponent statistics to develop
+                                predictive models for forecasting player performance.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="project">
+                        <img src="./assets/project_pics/satis.png" alt="Project 4">
+                        <div class="project-info">
+                            <h2>Satisfaction Detector</h2>
+                            <p>Engineered a program utilizing OpenCV2 and deepface, leveraging a Convolutional Neural Network to accurately classify 7 distinct human emotions which then determines a customers satisfaction. The program efficiently records and logs unique customer faces’ satisfaction via the devices camera which is then transferred from a database into PowerBI using DAX for intuitive data visualization for business owners helping them to make decisions.</p>
+                        </div>
+                    </div>
+    
+                    <div class="project">
+                        <img src="./assets/project_pics/1231006.png" alt="Project 5">
+                        <div class="project-info">
+                            <h2>Facial Detector</h2>
+                            <p>Developed a Python program using OpenCV2 and machine learning for computer vision focused on facial detection, integrated with a PyQt5 GUI. This application assists professional photographers, like RajBose Photography and HGFilms, in organizing photos by grouping them based on detected faces. Created alongside my colleague using Git and Github for version control.</p>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+            </div>
     </main>
 </body>
 </html>
