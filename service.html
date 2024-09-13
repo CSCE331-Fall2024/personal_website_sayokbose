@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" id = "mainStyleSheet" href="styles.css">
+    <script src="functions.js"></script>
 </head>
 <body>
     <header>
@@ -24,12 +25,13 @@
         
     </header>
 
-    <div class="page-container">
-        <div class="main-content">
+    <main class="page-container">
+        <div class="main-content" >
             <!-- Left Column -->
             <div class="column">
                 <h2>What is HHYC?</h2>
-                <p>HHYC (Hindu Heritage Youth Camp) is an organization dedicated to supporting youth development and providing various opportunities for young people to engage in their communities and develop essential life skills.</p>
+                <p>HHYC <a href="https://www.hinducamp.net/">(Hindu Heritage Youth Camp)</a> is an organization dedicated to supporting youth development and providing various opportunities for young people to engage in their communities and develop essential life skills.</p>
+                
                 <img src="./assets/hhyc/IMG_9653_2.jpg" alt="HHYC" class="left-img">
             </div>
 
@@ -52,7 +54,10 @@
                 
             </div>
         </div>
-    
-    </div>
+        <label class="switch">
+            <input type="checkbox" onclick="toggleStyleSheet()">
+            <span class="slider round"></span>
+          </label>
+    </main>
 </body>
 </html>

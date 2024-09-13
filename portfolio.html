@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" id = "mainStyleSheet" href="styles.css">
+    <script src="functions.js"></script>
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
             <h1>My Portfolio</h1>
             <div class="portfolio-grid">
                 <div class="column">
-                    <div class="project">
+                    <div class="project" onclick= "window.open('https://howdyfindswebsite.vercel.app/', '_blank');">
                         <!-- need to add onlick function later -->
                         <img src="./assets/project_pics/4195ba1a668f8f5320843d5c7c2374af42ab7542.png" alt="Project 1">
                         <div class="project-info">
@@ -43,9 +44,9 @@
                         </div>
                     </div>
     
-                    <div class="project">
+                    <div class="project" onclick= "window.open('https://github.com/AadityaSrinivasan/ResumeBuilder', '_blank');">
                         <img src="./assets/project_pics/8101319.png" alt="Project 2">
-                        <div class="project-info">
+                        <div class="project-info" >
                             <h2>Resume Builder</h2>
                             <p>Developed an innovative Flask-based application that leverages machine learning to analyze resumes and automate the job application
                                 process. The program employs web scraping techniques to extract key information from job postings, then utilizes OpenAI’s language
@@ -53,7 +54,7 @@
                         </div>
                     </div>
     
-                    <div class="project">
+                    <div class="project" onclick= "window.open('https://github.com/SayokBose/Wordle', '_blank');">
                         <img src="./assets/project_pics/wordle.JPEG" alt="Project 3">
                         <div class="project-info">
                             <h2>Wordle</h2>
@@ -64,7 +65,7 @@
     
                 <div class="column">
 
-                    <div class="project">
+                    <div class="project" onclick= "window.open('https://github.com/SayokBose/nba-prediction-model/tree/main', '_blank');">
                         <img src="./assets/project_pics/nba-logo.jpg" alt="Project 6">
                         <div class="project-info">
                             <h2>NBA Prediction Model</h2>
@@ -75,7 +76,7 @@
                     </div>
 
 
-                    <div class="project">
+                    <div class="project" onclick= "window.open('https://github.com/SayokBose/SatisfactionDetector', '_blank');">
                         <img src="./assets/project_pics/satis.png" alt="Project 4">
                         <div class="project-info">
                             <h2>Satisfaction Detector</h2>
@@ -83,7 +84,7 @@
                         </div>
                     </div>
     
-                    <div class="project">
+                    <div class="project" onclick= "window.open('https://github.com/SayokBose/facialComparer', '_blank');">
                         <img src="./assets/project_pics/1231006.png" alt="Project 5">
                         <div class="project-info">
                             <h2>Facial Detector</h2>
@@ -93,7 +94,13 @@
     
                     
                 </div>
+                <label class="switch">
+                    <input type="checkbox" onclick="toggleStyleSheet()">
+                    <span class="slider round"></span>
+                  </label>
             </div>
+            
     </main>
+    
 </body>
 </html>

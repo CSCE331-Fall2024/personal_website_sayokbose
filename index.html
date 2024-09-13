@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayok Bose Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" id = "mainStyleSheet" href="styles.css">
+    <script src="functions.js"></script>
 </head>
 <body>
     <header>
@@ -20,6 +21,7 @@
                 <a href="service.html">Service</a>
                 <a href="#ai">AI</a>
             </div>
+           
         </div>
         
     </header>
@@ -29,21 +31,22 @@
             <img src="RBP08977-Edit-Edit.jpg" alt="Sayok Bose" id="profile-pic">
             <div class="intro-text">
                 <div id="name-container">
-                    <h1 id="Sayok">Sayok</h1>
-                    <div>
-                        <h1 id="Bose">Bose</h1>
-                        <!-- <button id="mail-button">📧</button> -->
-                    </div>
+                    <h1 id="Sayok">Sayok </h1>
+                    
+                        <h1 id="Bose"> Bose</h1>
+                    
                 </div>
                 <div class="social-buttons">
                     <a href="https://www.instagram.com/sayokarts/?hl=en" target="_blank">
                         <button class="social-button">
                             <img src="./assets/Instagram_icon.png" alt="Link Icon" class="icon-image" />
+                            <!-- not my image, credit from https://www.pngegg.com/en/png-zopia -->
                         </button>
                     </a>
                     <a href="https://github.com/SayokBose" target="_blank">
                         <button class="social-button">
                             <img src="./assets/25231.png" alt="Folder Icon" class="icon-image" />
+                            <!-- not my icon found from https://www.flaticon.com/free-icon/github-logo_25231 -->
                         </button>
                     </a>
                     <a href="https://www.linkedin.com/in/sayokbosecs/" target="_blank">
@@ -53,14 +56,18 @@
                     </a>
                 </div>
             </div>
+            <label class="switch">
+                <input type="checkbox" onclick="toggleStyleSheet()">
+                <span class="slider round"></span>
+            </label>
         </div>
         
         
         
-        <p id="footer-text">My name is Sayok Bose.</p>
+        
 
     </main>
 
-    <script src="script.js"></script>
+    
 </body>
 </html>
